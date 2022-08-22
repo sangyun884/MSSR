@@ -19,7 +19,7 @@ First, you need to install [pytorch_wavelet](https://github.com/fbcotter/pytorch
 
 ```bash
 $ cd ./degradation/codes
-$ git clone <https://github.com/fbcotter/pytorch_wavelets>
+$ git clone https://github.com/fbcotter/pytorch_wavelets
 $ cd pytorch_wavelets
 $ pip install .
 ```
