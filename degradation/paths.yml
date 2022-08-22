@@ -1,0 +1,84 @@
+aim2019:
+  tdsr:
+    source: '../../../../data/aim2019/train-noisy-images' # '/mnt/data/aim2019/train-noisy-images'
+    target: '../../../../data/aim2019/train-clean-images' # '/mnt/data/aim2019/train-clean-images'
+    valid_hr: '../../../../data/aim2019/valid-gt-clean' # '/mnt/data/aim2019/valid-gt-clean'
+    valid_lr: '../../../../data/aim2019/valid-input-noisy' # '/mnt/data/aim2019/valid-input-noisy'
+
+
+ntire2020:
+  tdsr:
+    source: '/media/4T/Dizzy/SR_classical_DataSet/NTIRE2020/RealWorld/ImgProTrack/Corrupted-tr-x'
+    target: '/media/4T/Dizzy/SR_classical_DataSet/NTIRE2020/RealWorld/ImgProTrack/Corrupted-tr-y'
+    valid_hr: '/media/4T/Dizzy/AIM/AIM_datasets/DIV2K_val100/DIV2K_valid_HR'
+    valid_lr: '/media/4T/Dizzy/SR_classical_DataSet/NTIRE2020/RealWorld/ImgProTrack/Corrupted-tr-y'
+  ip:
+    source: '/media/4T/Dizzy/SR_classical_DataSet/NTIRE2020/RealWorld/iphoneTrack/DPEDiphone-tr-x'
+    target: '/media/4T/Dizzy/SR_classical_DataSet/NTIRE2020/RealWorld/iphoneTrack/DPEDiphone-tr-y'
+    valid_hr: '/media/4T/Dizzy/AIM/AIM_datasets/DIV2K_val100/DIV2K_valid_HR'
+    valid_lr: '/media/4T/Dizzy/SR_classical_DataSet/NTIRE2020/RealWorld/iphoneTrack/DPEDiphone-va'
+
+realsr:
+  tddiv2k:
+    source: '/media/4T/Dizzy/SR_classical_DataSet/RealSR/RealSRV3/Canon/Train/4/LR'
+    target: '/media/4T/Dizzy/AIM/AIM_datasets/DIV2K_train_HR'
+    valid_lr: '/media/4T/Dizzy/SR_classical_DataSet/RealSR/RealSRV3/Canon/Test/4/LR'
+    valid_hr: '/media/4T/Dizzy/SR_classical_DataSet/RealSR/RealSRV3/Canon/Test/4/HR'
+  tdrealsr:
+    source: '/media/4T/Dizzy/SR_classical_DataSet/RealSR/RealSRV3/Canon/Train/4/LR'
+    target: '/media/4T/Dizzy/SR_classical_DataSet/RealSR/RealSRV3/Canon/Train/4/HR'
+    valid_lr: '/media/4T/Dizzy/SR_classical_DataSet/RealSR/RealSRV3/Canon/Test/4/LR'
+    valid_hr: '/media/4T/Dizzy/SR_classical_DataSet/RealSR/RealSRV3/Canon/Test/4/HR'
+  tdrealsr_x2:
+    source: '/media/4T/Dizzy/SR_classical_DataSet/RealSR/RealSRV3/Canon/Train/2/LR'
+    target: '/media/4T/Dizzy/SR_classical_DataSet/RealSR/RealSRV3/Canon/Train/2/HR'
+    valid_lr: '/media/4T/Dizzy/SR_classical_DataSet/RealSR/RealSRV3/Canon/Test/2/LR'
+    valid_hr: '/media/4T/Dizzy/SR_classical_DataSet/RealSR/RealSRV3/Canon/Test/2/HR'
+
+camerasr:
+  tdsr:
+    source: '/media/4T/Dizzy/CameraSR/City100/City100_iPhoneX/LR_train'
+    target: '/media/4T/Dizzy/AIM/AIM_datasets/DIV2K_train_HR'
+    valid_lr: '/media/4T/Dizzy/CameraSR/City100/City100_iPhoneX/LR_val'
+    valid_hr: '/media/4T/Dizzy/CameraSR/City100/City100_iPhoneX/HR_val'
+
+mydsn:
+  a:
+    hr:
+      train: '/home/sangyunlee/datasets/ntire2020/train-target'
+      valid: '/home/sangyunlee/datasets/ntire2020/track1-valid-gt'
+    lr:
+      train: '/home/sangyunlee/datasets/ntire2020/track1-train-source'
+      valid: '/home/sangyunlee/datasets/ntire2020/track1-valid-input'
+ntire2018:
+  a:
+    hr:
+      train: '/mnt/data/NTIRE2018/train_HR'
+      valid: '/mnt/data/track1/DIV2K_valid_HR'
+    lr:
+      train: '/mnt/data/NTIRE2018/train_LR'
+      valid: '/mnt/data/NTIRE2018/val_LR'
+ntire2018wild:
+  a:
+    hr:
+      train: '/mnt/data/NTIRE2018/train_HR'
+      valid: '/mnt/data/track1/DIV2K_valid_HR'
+    lr:
+      train: '/mnt/data/NTIRE2018/DIV2K_train_LR_wild'
+      valid: '/mnt/data/NTIRE2018/DIV2K_valid_LR_wild'
+wv3aerial:
+  a:
+    hr:
+      train: '/mnt/data/aerial/train'
+      valid: '/mnt/data/aerial/test'
+    lr:
+      train: '/mnt/data/sat_data/wv3_locals_2/wv3_mm_clahe/train/imgs'
+      valid: '/mnt/data/sat_data/wv3_locals_2/wv3_mm_clahe/test/imgs'
+inf_val:
+  a:
+    hr:
+      train: '/mnt/data/track1/DIV2K_valid_HR'
+      valid: '/mnt/data/track1/DIV2K_valid_HR'
+    lr:
+      train: '/mnt/data/NTIRE2018/train_LR'
+      valid: '/mnt/data/NTIRE2018/val_LR'

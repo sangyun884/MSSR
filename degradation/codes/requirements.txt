@@ -1,0 +1,7 @@
+dtcwt
+pytest>=4.6
+py3nvml
+coverage
+pytest-cov
+PyWavelets
+scikit-image==0.16
